@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Ataque dos Clones",
+        "year": 2002,
+        "sequential": 2,
+        "trilogy": "Prequel"
+    },
+    {
+        "name": "Solo: Uma História Star Wars",
+        "year": 2018,
+        "sequential": 4,
+        "trilogy": "Spin-Off"
+    },
+    {
+        "name": "A Vingança dos Sith",
+        "year": 2005,
+        "sequential": 3,
+        "trilogy": "Prequel"
+    },
+    {
+        "name": "Rogue One: Uma História Star Wars",
+        "year": 2016,
+        "sequential": 5,
+        "trilogy": "Spin-Off"
+    },
+    {
+        "name": "A Ameaça Fantasma",
+        "year": 1999,
+        "sequential": 1,
+        "trilogy": "Prequel"
+    },
+    {
+        "name": "O Despertar da Força",
+        "year": 2015,
+        "sequential": 9,
+        "trilogy": "Sequel"
+    },
+    {
+        "name": "Uma nova esperança",
+        "year": 1977,
+        "sequential": 6,
+        "trilogy": "Clássica"
+    },
+    {
+        "name": "Os Últimos Jedi",
+        "year": 2017,
+        "sequential": 10,
+        "trilogy": "Sequel"
+    },
+    {
+        "name": "O Retorno de Jedi",
+        "year": 1983,
+        "sequential": 8,
+        "trilogy": "Clássica"
+    },
+    {
+        "name": "O Império Contra-Ataca",
+        "year": 1980,
+        "sequential": 7,
+        "trilogy": "Clássica"
+    },
+    {
+        "name": "A Ascensão Skywalker",
+        "year": 2019,
+        "sequential": 11,
+        "trilogy": "Sequel"
+    }
+]

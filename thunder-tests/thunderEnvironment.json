@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "_id": "9d715de7-30e0-4816-af01-f76d8c83b799",
+    "name": "(Global Env)",
+    "default": false,
+    "global": true,
+    "sortNum": -2,
+    "created": "2023-04-24T23:44:09.019Z",
+    "modified": "2023-04-24T23:44:09.019Z",
+    "data": [
+      {
+        "name": "url",
+        "value": "http://localhost:3000/"
+      }
+    ]
+  }
+]

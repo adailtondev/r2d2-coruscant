@@ -1,19 +1,35 @@
 {
-  "name": "coruscant",
+  "name": "r2d2-coruscant",
   "version": "1.0.0",
-  "description": "",
+  "description": "api sobre star wars",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm install && node app.js",
-    "dev": " npm install && nodemon app.js"
+    "dev": "npm install && nodemon app.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iniciativa-Padawan/r2d2-coruscant.git"
+  },
+  "keywords": [
+    "r2d2",
+    "star wars"
+  ],
+  "author": "Adailton Henrique",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iniciativa-Padawan/r2d2-coruscant/issues"
+  },
+  "homepage": "https://github.com/Iniciativa-Padawan/r2d2-coruscant#readme",
   "dependencies": {
+    "@prisma/client": "^4.13.0",
     "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
-    "express-validator": "^7.0.1"
+    "express-validator": "^7.0.1",
+    "swagger-ui-express": "^4.6.3"
+  },
+  "devDependencies": {
+    "prisma": "^4.13.0"
   }
 }

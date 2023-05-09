@@ -6,8 +6,14 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# history
+
+#thunder client history
+
+#history
 .history
+
+#dependency
+node_modules
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
