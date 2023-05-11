@@ -190,7 +190,8 @@
           "name",
           "trilogy",
           "sequential",
-          "year"
+          "year",
+          "img"
         ],
         "type": "object",
         "properties": {
@@ -209,6 +210,10 @@
           "year": {
             "type": "integer",
             "example": 1997
+          },
+          "img": {
+            "type": "integer",
+            "example": "urlImg"
           }
         },
         "xml": {
