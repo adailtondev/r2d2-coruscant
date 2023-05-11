@@ -177,7 +177,7 @@
         ],
         "responses": {
           "400": {
-            "description": "Invalid pet value"
+            "description": "Invalid movie value"
           }
         }
       }
@@ -194,10 +194,6 @@
         ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "example": 10
-          },
           "name": {
             "type": "string",
             "example": "doggie"
