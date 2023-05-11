@@ -64,12 +64,12 @@
     "method": "POST",
     "sortNum": 22500,
     "created": "2023-05-01T23:21:01.954Z",
-    "modified": "2023-05-08T22:10:35.682Z",
+    "modified": "2023-05-11T13:15:28.570Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\": \"fasdsasçksakjdlfkasadaeeed\",\n  \"year\": 2005,\n  \"sequential\": \"3\",\n  \"trilogy\": \"prequel\"\n}",
+      "raw": "{\n  \"name\": \"A Ameaça Fantasma\",\n  \"year\": 1999,\n  \"sequential\": \"1\",\n  \"trilogy\": \"prequel\",\n  \"img\": \"https://upload.wikimedia.org/wikipedia/pt/thumb/3/30/Star_Wars_Epis%C3%B3dio_1_Amea%C3%A7a_Fantasma.jpg/240px-Star_Wars_Epis%C3%B3dio_1_Amea%C3%A7a_Fantasma.jpg\"\n}",
       "form": []
     },
     "tests": []
@@ -111,12 +111,12 @@
     "method": "PUT",
     "sortNum": 30000,
     "created": "2023-05-04T13:33:10.099Z",
-    "modified": "2023-05-05T14:30:56.825Z",
+    "modified": "2023-05-11T13:00:39.442Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\": \"Ataque dos clones\",\n  \"year\": 2002,\n  \"sequential\": \"2\",\n  \"trilogy\": \"prequel\"\n}",
+      "raw": "{\n  \"name\": \"A Vingança dos Sith\",\n  \"year\": 2005,\n  \"sequential\": \"3\",\n  \"trilogy\": \"prequel\",\n  \"img\": \"https://upload.wikimedia.org/wikipedia/pt/5/58/Star_Wars_Epis%C3%B3dio_III_A_Vingan%C3%A7a_dos_Sith.jpg\"\n}",
       "form": []
     },
     "tests": []

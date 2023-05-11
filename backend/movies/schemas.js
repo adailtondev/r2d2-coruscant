@@ -42,6 +42,15 @@ const movieSchema = () =>
         negated: true,
         errorMessage: "Trilogia do filme é obrigatório",
       },
+    },
+    img: {
+      isString: {
+        errorMessage: "Url da imagem do filme deve ser um texto",
+      },
+      isEmpty: {
+        negated: true,
+        errorMessage: "Url da imagem do filme é obrigatório",
+      },
     }
   });
 

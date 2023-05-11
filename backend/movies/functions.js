@@ -16,17 +16,17 @@ const addMovie = async (movie) => {
 };
 
 //função que retorna se um filme já existe na lista
-const existentMovie = async(movie) => {
+const existentMovie = async (movie) => {
   const exists = await prisma.movie.findMany({
     where: {
       name: {
         contains: movie.name,
-        mode: 'insensitive'
-      }
-    }
-  })
-  return exists
-}
+        mode: "insensitive",
+      },
+    },
+  });
+  return exists;
+};
 
 // função que remove um filme
 const removeMovie = async (id) => {
@@ -87,8 +87,6 @@ const getTrilogy = async (trilogy) => {
   return movies;
 };
 
-
-
 module.exports = {
   allMovies,
   addMovie,
@@ -98,5 +96,5 @@ module.exports = {
   sequentialOrder,
   movieReleaseOrder,
   getTrilogy,
-  existentMovie
+  existentMovie,
 };
