@@ -64,12 +64,12 @@
     "method": "POST",
     "sortNum": 22500,
     "created": "2023-05-01T23:21:01.954Z",
-    "modified": "2023-05-11T13:15:28.570Z",
+    "modified": "2023-05-11T13:30:45.845Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\": \"A Ameaça Fantasma\",\n  \"year\": 1999,\n  \"sequential\": \"1\",\n  \"trilogy\": \"prequel\",\n  \"img\": \"https://upload.wikimedia.org/wikipedia/pt/thumb/3/30/Star_Wars_Epis%C3%B3dio_1_Amea%C3%A7a_Fantasma.jpg/240px-Star_Wars_Epis%C3%B3dio_1_Amea%C3%A7a_Fantasma.jpg\"\n}",
+      "raw": "{\r\n  \"name\": \"A Ameaça Fantasma\",\r\n  \"year\": 1999,\r\n  \"sequential\": \"1\",\r\n  \"trilogy\": \"prequel\",\r\n  \"img\": \"https://upload.wikimedia.org/wikipedia/pt/thumb/3/30/Star_Wars_Epis%C3%B3dio_1_Amea%C3%A7a_Fantasma.jpg/240px-Star_Wars_Epis%C3%B3dio_1_Amea%C3%A7a_Fantasma.jpg\"\r\n}",
       "form": []
     },
     "tests": []

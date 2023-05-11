@@ -43,7 +43,7 @@ function Filme({ movie }) {
       break;
     default:
   }
-
+  console.log(movie.img)
   return (
     <li
       className={`flex flex-col w-64 h-[30rem] items-center text-slate-100 hover:text-slate-800 group justify-center gap-6 text-center rounded-md bg-gray-600 hover:${corFundo}`}
