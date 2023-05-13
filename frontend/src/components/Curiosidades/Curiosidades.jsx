@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './Curiosidades.css'
 
 const Curiosidades = () => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -33,25 +34,27 @@ const Curiosidades = () => {
     setSelectedItem(item);
   };
 
+  
+
   return (
-    <section className="flex justify-center gap-10 group text-gray-100 text-justify items-start p-32 rounded-lg  m-12 bg-gradient-to-tr from-indigo-900 to-black mt-36 h-fit w-fit">
-      <div className="w-[24rem] flex flex-col gap-10  ">
-      <h1 className="font-extrabold text-3xl">Curiosidades da franquia</h1>
-        <ul class="list-inside">
+    <section className="flex justify-center gap-10 group text-gray-100 text-justify p-32 rounded-lg  m-12 bg-gradient-to-tr from-cyan-900 to-black mt-36 h-fit w-fit">
+      <div className="w-[24rem]">
+      <h1 className="font-extrabold text-2xl mb-16">Curiosidades da franquia</h1>
+        <ul className="list-inside">
           {items.map((item, index) => (
-            <li className="cursor-pointer w-72 px-10 py-3 rounded-lg mb-16 bg-gray-300 text-black" key={index} onClick={() => itemClick(item)}>
+            <li className="cursor-pointer w-72 px-10 py-3 rounded-lg mb-16 bg-gray-300 text-black hover:bg-cyan-500 shadow-lg shadow-cyan-500/50 ease-in duration-300" key={index} onClick={() => itemClick(item)}>
               {item.name}
             </li>
           ))}
         </ul>
         
       </div>
-      <div className="w-[24rem]">
+      <div className="w-[32rem]">
       {selectedItem && (
           <div className="flex flex-col gap-8">
             <h3 className="font-bold text-2xl">{selectedItem.name}</h3>
-            <p>{selectedItem.description}</p>
-            <p>{selectedItem.description1}</p>
+            <p className="leading-8">{selectedItem.description}</p>
+            <p className="leading-8">{selectedItem.description1}</p>
             <img className="w-44 h-44" src={selectedItem.imageUrl} alt="" />
           </div>
         )}

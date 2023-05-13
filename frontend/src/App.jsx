@@ -16,12 +16,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <section className="flex justify-center items-center">
-        <Curiosidades />
-      </section>
-
+      <Curiosidades />
       <Sobre />
-
       <ul className="flex flex-wrap gap-5 items-center justify-center m-8 ">
         {movies.map((movie) => (
           <Filme key={movie.id} movie={movie} />
