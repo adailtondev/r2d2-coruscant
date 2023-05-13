@@ -1,11 +1,11 @@
 const Sobre = () => {
   return (
     <section className="flex justify-center">
-      <div className="text-gray-100 text-justify grid-cols-3 grid-rows-8 items-center p-20 rounded-lg gap-14 m-12 bg-gradient-to-tl from-cyan-900 to-black mt-36 h-fit w-[80rem]">
+      <div className="text-gray-100 text-justify grid-cols-2 grid-rows-8 items-center p-20 rounded-lg gap-14 m-12 bg-gradient-to-tl from-cyan-900 to-black mt-36 h-fit w-[80rem]">
         <h1 className="font-extrabold text-4xl col-span-3">
           Sobre a franquia:
         </h1>
-        <div className="flex gap-5 items-center col-span-3 my-12">
+        <div className="flex gap-5 items-center col-span-2 my-12">
           <p className="leading-8 mr-24">
             A franquia Star Wars é uma das mais icônicas e amadas do mundo do
             entretenimento. Criada por George Lucas em 1977, a saga espacial
@@ -19,7 +19,7 @@ const Sobre = () => {
             alt=""
           />
         </div>
-        <div className="flex gap-5 items-center col-span-3 my-12">
+        <div className="flex gap-5 items-center col-span-2 my-12">
           <img
             className="w-[30rem] h-[22rem] rounded-md"
             src="https://www.metroworldnews.com.br/resizer/SwqV2Okv_hUWODsHFslzY69w4ac=/800x0/filters:format(png):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/6NP7OFWQARGTVMQ4DPI4FVUPFU.png"
@@ -34,7 +34,7 @@ const Sobre = () => {
             crescer e se renovar.
           </p>
         </div>
-        <div className="flex gap-5 items-center col-span-3 my-12">
+        <div className="flex gap-5 items-center col-span-2 my-12">
           <p className="leading-8 mr-28">
             O que torna Star Wars tão especial é a maneira como ela transcende
             as telas. Os fãs se envolvem profundamente com os personagens e
@@ -49,7 +49,7 @@ const Sobre = () => {
             alt=""
           />
         </div>
-        <div className="flex gap-5 items-center col-span-3 my-12">
+        <div className="flex gap-5 items-center col-span-2 my-12">
           <img
             className="w-[30rem] h-[22rem] rounded-md"
             src="https://www.planocritico.com/wp-content/uploads/2020/11/Star-Wars-O-Despertar-da-Forca-Sem-Spoilers.jpg"
@@ -64,7 +64,7 @@ const Sobre = () => {
             introduziu novos heróis e vilões para a próxima geração.
           </p>
         </div>
-        <div className="flex gap-5 items-center col-span-3 my-12">
+        <div className="flex gap-5 items-center col-span-2 my-12">
           <p className="leading-8 mr-28">
             Além das sequências, a Disney também lançou uma série de filmes
             derivados, como "Rogue One: Uma História Star Wars" e "Han Solo: Uma
@@ -80,7 +80,7 @@ const Sobre = () => {
             alt=""
           />
         </div>
-        <div className="flex gap-5 items-center col-span-3 my-12">
+        <div className="flex gap-5 items-center col-span-2 my-12">
           <img
             className="w-[30rem] h-[22rem] rounded-md"
             src="https://i.ytimg.com/vi/7Ct1GIzjkok/maxresdefault.jpg"

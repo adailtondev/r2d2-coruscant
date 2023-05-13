@@ -1,4 +1,6 @@
 import Img from "../../assets/logo.png";
+import './Logo.css'
+
 const Logo = () => {
   return (
     <a href="#">

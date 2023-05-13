@@ -38,7 +38,7 @@ const Curiosidades = () => {
 
   return (
     <section className="flex justify-center gap-10 group text-gray-100 text-justify p-32 rounded-lg  m-12 bg-gradient-to-tr from-cyan-900 to-black mt-36 h-fit w-fit">
-      <div className="w-[24rem]">
+      <div className="w-[24rem] flex flex-col items-center">
       <h1 className="font-extrabold text-2xl mb-16">Curiosidades da franquia</h1>
         <ul className="list-inside">
           {items.map((item, index) => (
@@ -49,16 +49,14 @@ const Curiosidades = () => {
         </ul>
         
       </div>
-      <div className="w-[32rem]">
       {selectedItem && (
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 w-[32rem]">
             <h3 className="font-bold text-2xl">{selectedItem.name}</h3>
             <p className="leading-8">{selectedItem.description}</p>
             <p className="leading-8">{selectedItem.description1}</p>
             <img className="w-44 h-44" src={selectedItem.imageUrl} alt="" />
           </div>
         )}
-      </div>
     </section>
   );
 };
