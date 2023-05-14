@@ -1,0 +1,15 @@
+@media (max-width: 920px) {
+    .navbar {
+        margin-right: 0;
+    }
+    .navbar ul{
+        margin-left: 13rem;
+
+    }
+    .navbar ul li{
+        padding: 1.5rem;
+    }
+    .navbar ul li a{
+        font-size: medium;
+    }
+}

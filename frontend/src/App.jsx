@@ -23,7 +23,7 @@ function App() {
         <section className="navbar">
           <Navbar />
         </section>
-        <section className="flex justify-center">
+        <section className="flex justify-center container-curiosidades">
           <Curiosidades />
         </section>
         <section>

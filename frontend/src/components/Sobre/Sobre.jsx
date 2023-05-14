@@ -1,8 +1,9 @@
+import './Sobre.css'
+
 const Sobre = () => {
   return (
-    <section className="flex justify-center">
-      <div className="text-gray-100 text-justify grid-cols-2 grid-rows-8 items-center p-20 rounded-lg gap-14 m-12 bg-gradient-to-tl from-cyan-900 to-black mt-36 h-fit w-[80rem]">
-        <h1 className="font-extrabold text-4xl col-span-3">
+      <section className="container-sobre text-gray-100 text-justify items-center p-20 rounded-lg gap-14 m-12 bg-gradient-to-tl from-cyan-900 to-black mt-36 h-fit ">
+        <h1 className="font-bold text-4xl col-span-2 text-center">
           Sobre a franquia:
         </h1>
         <div className="flex gap-5 items-center col-span-2 my-12">
@@ -14,14 +15,14 @@ const Sobre = () => {
             rica mitologia.
           </p>
           <img
-            className="w-[30rem] h-[22rem] rounded-md border-solid border-gray-50"
+            className="w-[30rem] h-[22rem] rounded-md border-solid border-gray-50 sobre-img"
             src="https://assets.b9.com.br/wp-content/uploads/2020/02/glb9.jpg"
             alt=""
           />
         </div>
         <div className="flex gap-5 items-center col-span-2 my-12">
           <img
-            className="w-[30rem] h-[22rem] rounded-md"
+            className="w-[30rem] h-[22rem] rounded-md sobre-img"
             src="https://www.metroworldnews.com.br/resizer/SwqV2Okv_hUWODsHFslzY69w4ac=/800x0/filters:format(png):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/6NP7OFWQARGTVMQ4DPI4FVUPFU.png"
             alt=""
           />
@@ -44,14 +45,14 @@ const Sobre = () => {
             impactou suas vidas.
           </p>
           <img
-            className="w-[30rem] h-[22rem] rounded-md"
+            className="w-[30rem] h-[22rem] rounded-md sobre-img"
             src="https://media.vanityfair.com/photos/6297f3d1f0746bf707feb23a/4:3/w_2560%2Cc_limit/Florida%2520Cosplayers%2520-%2520Star%2520Wars%2520Celebration%25201.jpg"
             alt=""
           />
         </div>
         <div className="flex gap-5 items-center col-span-2 my-12">
           <img
-            className="w-[30rem] h-[22rem] rounded-md"
+            className="w-[30rem] h-[22rem] rounded-md sobre-img"
             src="https://www.planocritico.com/wp-content/uploads/2020/11/Star-Wars-O-Despertar-da-Forca-Sem-Spoilers.jpg"
             alt=""
           />
@@ -75,14 +76,14 @@ const Sobre = () => {
             personagens cativantes.
           </p>
           <img
-            className="w-[30rem] h-[22rem] rounded-md"
+            className="w-[30rem] h-[22rem] rounded-md sobre-img"
             src="https://cdn.mos.cms.futurecdn.net/9acdFyuRut7qLHaJBXsXFe-1200-80.jpg"
             alt=""
           />
         </div>
         <div className="flex gap-5 items-center col-span-2 my-12">
           <img
-            className="w-[30rem] h-[22rem] rounded-md"
+            className="w-[30rem] h-[22rem] rounded-md sobre-img"
             src="https://i.ytimg.com/vi/7Ct1GIzjkok/maxresdefault.jpg"
             alt=""
           />
@@ -100,8 +101,7 @@ const Sobre = () => {
             Star Wars!
           </p>
         </div>
-      </div>
-    </section>
+      </section>
   );
 };
 

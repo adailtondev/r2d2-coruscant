@@ -37,7 +37,7 @@ const Curiosidades = () => {
   
 
   return (
-    <section className="flex justify-center gap-10 group text-gray-100 text-justify p-32 rounded-lg  m-12 bg-gradient-to-tr from-cyan-900 to-black mt-36 h-fit w-fit">
+    <section className="flex justify-center gap-10 group text-gray-100 text-justify p-32 rounded-lg  m-12 bg-gradient-to-tr from-cyan-900 to-black mt-36 h-fit w-auto">
       <div className="w-[24rem] flex flex-col items-center">
       <h1 className="font-extrabold text-2xl mb-16">Curiosidades da franquia</h1>
         <ul className="list-inside">

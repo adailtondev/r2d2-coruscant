@@ -3,7 +3,7 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <header className="flex justify-between ">
+    <header className="flex justify-between w-auto navbar">
       <Logo />
       <ul className="flex gap-14 mr-[10rem] items-center justify-center">
         <li className="hover:bg-cyan-700 px-16 py-4 rounded-md group ease-in duration-300 cursor-pointer">

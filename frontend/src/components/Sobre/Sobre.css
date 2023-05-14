@@ -1,0 +1,32 @@
+@media (max-width: 640px) {
+    .section-sobre {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-sobre div:nth-child(even){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .container-sobre div:nth-child(odd){
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .container-sobre p {
+        text-align: center;
+        font-size: medium;
+        margin: 5rem 0 5rem;
+    }
+
+    .container-sobre div img {
+        width: 350px;
+        height: 250px;
+    }
+}
