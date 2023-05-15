@@ -13,7 +13,9 @@ function Movie () {
   }, {id});
 
   return (
-    <div></div>
+    <div>
+        <img src={movies.img} alt="" />
+    </div>
   )
 }
 

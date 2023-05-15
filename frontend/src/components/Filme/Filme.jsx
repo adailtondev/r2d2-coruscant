@@ -22,7 +22,7 @@ const Filme = ({ movie }) => {
     <li
       className={`flex flex-col w-64 h-[30rem] items-center text-slate-100 hover:text-slate-800 group justify-center gap-6 text-center rounded-md bg-gray-600 hover:${corFundo}`}
     >
-      <h1 className="text-lg h-6 mb-1  font-bold ">{movie.name}</h1>
+      <h1 className="text-lg h-6 mb-1 font-bold ">{movie.name}</h1>
       <img className="w-40 h-60" src={movie.img} alt="" />
       <h3 className={` ${corSequencial} w-fit rounded-md p-1 `}>
         {movie.trilogy}
