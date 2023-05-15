@@ -23,9 +23,7 @@
   "paths": {
     "/movies": {
       "get": {
-        "tags": [
-          "movies"
-        ],
+        "tags": ["movies"],
         "summary": "Return movies in database",
         "description": "Return movies in database",
         "operationId": "returnMovies",
@@ -49,9 +47,7 @@
         }
       },
       "post": {
-        "tags": [
-          "movies"
-        ],
+        "tags": ["movies"],
         "summary": "Add a new movie to the database",
         "description": "Add a new movie to the database",
         "operationId": "addMovie",
@@ -99,10 +95,40 @@
       }
     },
     "/movies/{movieId}": {
-      "put": {
-        "tags": [
-          "movies"
+      "get": {
+        "tags": ["movies"],
+        "summary": "Finds a Movie by Id",
+        "description": "Returns a movie",
+        "operationId": "findMovieById",
+        "parameters": [
+          {
+            "name": "movieId",
+            "in": "path",
+            "description": "Movie id to update",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Movie"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No movies registered"
+          }
+        }
+      },
+      "put": {
+        "tags": ["movies"],
         "summary": "Update an existing movie",
         "description": "Update a movie by Id",
         "operationId": "updateMovie",
@@ -157,9 +183,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "movies"
-        ],
+        "tags": ["movies"],
         "summary": "Deletes a movie",
         "description": "delete a movie",
         "operationId": "deleteMovie",
@@ -186,13 +210,7 @@
   "components": {
     "schemas": {
       "Movie": {
-        "required": [
-          "name",
-          "trilogy",
-          "sequential",
-          "year",
-          "img"
-        ],
+        "required": ["name", "trilogy", "sequential", "year", "img"],
         "type": "object",
         "properties": {
           "name": {

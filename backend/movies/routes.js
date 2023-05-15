@@ -33,6 +33,16 @@ router.post("/movies", schemas.movieSchema(), async (req, res) => {
   }
 });
 
+router.get('/movies/:id/', async(req, res) => {
+  const movie = await functions.getById(req.params.id)
+
+  if (!movie) {
+    res.status(404).send('Filme não encontrado')
+  } 
+  else 
+    res.send(movie)
+})
+
 // requisição para deletar um filme
 router.delete("/movies/:id", async (req, res) => {
   await functions.removeMovie(req.params.id);

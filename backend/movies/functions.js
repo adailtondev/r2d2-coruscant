@@ -8,6 +8,15 @@ const allMovies = async () => {
   return movies;
 };
 
+const getById = async (id) => {
+  const movie = await prisma.movie.findUnique({
+    where: {
+      id: id
+    }
+  })
+  return movie
+}
+
 // função que adiciona um filme
 const addMovie = async (movie) => {
   await prisma.movie.create({
@@ -97,4 +106,5 @@ module.exports = {
   movieReleaseOrder,
   getTrilogy,
   existentMovie,
+  getById
 };
