@@ -2,7 +2,7 @@ import './Sobre.css'
 
 const Sobre = () => {
   return (
-      <section className="container-sobre text-gray-100 text-justify items-center p-20 rounded-lg gap-14 m-12 bg-gradient-to-tl from-cyan-900 to-black mt-36 h-fit ">
+      <section className="container-sobre text-gray-100 text-justify items-center rounded-lg gap-14 bg-gradient-to-tl from-cyan-900 to-black mt-36 h-fit w-[90%] p-10">
         <h1 className="font-bold text-4xl col-span-2 text-center">
           Sobre a franquia:
         </h1>

@@ -1,4 +1,4 @@
-@media (max-width: 1070px) {
+@media (max-width: 1100px) {
     .section-sobre {
         display: grid;
         justify-content: center;
@@ -28,5 +28,39 @@
     .container-sobre div img {
         width: 350px;
         height: 250px;
+    }
+}
+
+@media (max-width: 680px) {
+    .container-sobre {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .container-sobre div {
+        width: 95%;
+        margin: 0;
+        padding: 1rem;
+    }
+    .container-sobre div p {
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+    .container-sobre div img {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .container-sobre div img {
+        width: 250px;
+        height: 175px;
     }
 }

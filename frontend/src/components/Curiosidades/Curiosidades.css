@@ -15,7 +15,7 @@
 }
 
 .curiosidade-texto {
-    width: max-content;
+    /* width: fit-content; */
 }
 
 @media (max-width: 1050px) {
@@ -39,5 +39,6 @@
     .curiosidade-texto {
         text-align: center;
         width: 250px;
+        margin-top: 20px;
     }
 }

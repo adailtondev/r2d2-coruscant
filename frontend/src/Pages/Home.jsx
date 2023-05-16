@@ -23,7 +23,7 @@ function Home() {
         <section className="flex justify-center container-curiosidades w-screen">
           <Curiosidades />
         </section>
-        <section className="w-screen">
+        <section className="flex justify-center w-[100%]">
           <Sobre />
         </section>
       </section>

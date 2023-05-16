@@ -15,6 +15,9 @@
     .navbar {
         
     }
+    .navbar img {
+        margin-left: 0.5rem;
+    }
     .navbar ul{
         margin-right: 0.5rem
     }
