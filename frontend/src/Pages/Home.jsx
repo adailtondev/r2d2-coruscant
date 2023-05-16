@@ -1,40 +1,31 @@
-import { useState, useEffect } from "react";
-import Filme from "../components/Filme/Filme"
+import Filme from "../components/Card/Card";
 import Navbar from "../components/Navbar/Navbar";
 import Sobre from "../components/Sobre/Sobre";
 import Curiosidades from "../components/Curiosidades/Curiosidades";
-import '../index.css'
+import "../../index.css";
+import PropTypes from "prop-types";
+
+
+Home.propTypes = {
+  movies: PropTypes.array,
+};
 
 function Home() {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-    fetch("https://r2d2-3nrw.onrender.com/movies").then((response) =>
-      response.json().then((json) => setMovies(json))
-    );
-  }, []);
-
   return (
     <>
-      <section className="page">
+      <section className="page ">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
-        <section className="navbar">
+        <section className="navbar w-fit">
           <Navbar />
         </section>
-        <section className="flex justify-center container-curiosidades">
+        <section className="flex justify-center container-curiosidades w-screen">
           <Curiosidades />
         </section>
-        <section>
+        <section className="w-screen">
           <Sobre />
         </section>
-
-        <ul className="flex flex-wrap gap-5 items-center justify-center m-8 ">
-          {movies.map((movie) => (
-            <Filme key={movie.id} movie={movie} />
-          ))}
-        </ul>
       </section>
     </>
   );

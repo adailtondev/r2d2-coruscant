@@ -1,18 +1,19 @@
-import Logo from "../Logo/Logo";
 import './Navbar.css'
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate()
   return (
-    <header className="flex justify-between w-auto navbar">
-      <Logo />
-      <ul className="flex gap-14 mr-[10rem] items-center justify-center">
-        <li className="hover:bg-cyan-700 px-16 py-4 rounded-md group ease-in duration-300 cursor-pointer">
+    <header className="flex navbar justify-between w-screen">
+      <img src="../../src/assets/logo.png" alt="" className='w-[10%] ml-16'/>
+      <ul className="flex gap-14 items-center justify-center mr-28">
+        <li className="hover:bg-cyan-700 px-16 py-4 rounded-md group ease-in duration-300 cursor-pointer" >
           <a href="#" className="text-white group-hover:text-gray-100">
             Ínicio
           </a>
         </li>
         <li className="hover:bg-cyan-700 px-16 py-4 rounded-md group ease-in duration-300 cursor-pointer">
-          <a className="text-white group-hover:text-gray-100" href="#">
+          <a className="text-white group-hover:text-gray-100" href="#" onClick={()=> navigate('/movies')}>
             Filmes
           </a>
         </li>

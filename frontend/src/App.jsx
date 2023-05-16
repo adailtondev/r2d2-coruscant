@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
 import { Routes, Route, Outlet, Link, BrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home";
 import Movie from './Pages/Movie'
+import Create from "./Pages/Create";
+import AllMovies from "./Pages/AllMovies";
 
 
 function App() {
@@ -9,7 +10,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}/>
-          <Route path="/:id" element={<Movie />}/>
+          <Route path="/movies/:id" element={<Movie />}/>
+          <Route path='/create/' element={<Create />} />
+          <Route path='/movies' element={<AllMovies/>}/>
         </Routes>
       </BrowserRouter>
     

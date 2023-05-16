@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 2.5rem;
-
+    
 }
 
 .container div {
@@ -11,4 +11,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+}
+
+.curiosidade-texto {
+    width: max-content;
+}
+
+@media (max-width: 1050px) {
+    .container {
+        display: flex;
+        max-width: 90%;
+        flex-direction: column;
+    }
+    .curiosidade-texto {
+        text-align: center;
+        width: 500px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        display: flex;
+        max-width: 90%;
+        flex-direction: column;
+    }
+    .curiosidade-texto {
+        text-align: center;
+        width: 250px;
+    }
 }
