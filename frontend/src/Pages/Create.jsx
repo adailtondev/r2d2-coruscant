@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import "../../index.css";
+import Navbar from "../components/Navbar/Navbar";
 
 function Create() {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ function Create() {
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
-    console.log(data)
+    console.log(data);
     const response = await fetch("https://r2d2-3nrw.onrender.com/movies", {
       body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" },
@@ -19,22 +19,29 @@ function Create() {
     });
 
     if (response.status == 201) {
-      navigate("/");
+      navigate("/movies/");
     } else {
     }
   };
 
   return (
-    <>
+    <section className="h-auto">
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
+      <Navbar />
+      <div className="flex flex-col justify-center items-center mt-20 my-12">
+        <div className="w-[80%] flex flex-col justify-center items-center gap-12 text-slate-50 text-2xl">
+          <h2>Deseja adicionar um filme ao banco?</h2>
+          <h3>Preencha o formulário:</h3>
+        </div>
+      </div>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex h-screen relative flex-col justify-center items-center gap-6 max-w-screen-sm m-auto p-10"
+        className="flex relative flex-col justify-center items-center gap-6 max-w-screen-sm m-auto p-10  bg-gradient-to-tl from-cyan-900 to-transparent rounded-md"
       >
         <label htmlFor="name" className="text-slate-50">
-          Name
+          Nome
         </label>
         <input
           className={`rounded-lg p-2 w-full ${
@@ -50,7 +57,7 @@ function Create() {
         )}
 
         <label htmlFor="trilogy" className="text-slate-50">
-          Trilogy
+          Trilogia
         </label>
 
         <select
@@ -66,6 +73,7 @@ function Create() {
           <option value="classic">classic</option>
           <option value="prequel">prequel</option>
           <option value="sequel">sequel</option>
+          <option value="spinoff">spinoff</option>
         </select>
         {errors.trilogy && (
           <span className="text-red-400">{errors.trilogy.message}</span>
@@ -86,7 +94,7 @@ function Create() {
         )}
 
         <label htmlFor="year" className="text-slate-50">
-          Year
+          Ano
         </label>
         <input
           type="number"
@@ -112,7 +120,7 @@ function Create() {
         )}
 
         <label htmlFor="sequential" className="text-slate-50">
-          Sequential
+          Sequencial
         </label>
         <input
           type="number"
@@ -137,7 +145,7 @@ function Create() {
           type="submit"
         />
       </form>
-    </>
+    </section>
   );
 }
 

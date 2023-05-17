@@ -5,15 +5,15 @@ const Navbar = () => {
   const navigate = useNavigate()
   return (
     <header className="flex navbar justify-between w-screen">
-      <img src="https://assets.stickpng.com/thumbs/602bb8655c5b2300043add95.png" alt="" className='w-[10%] ml-16'/>
+      <img src="https://en.logodownload.org/wp-content/uploads/2020/09/star-wars-logo-3-11-1024x443.png" alt="" className='w-[8%] h-[3%] mt-2 ml-16'/>
       <ul className="flex gap-14 items-center justify-center mr-28">
         <li className="hover:bg-cyan-700 px-16 py-4 rounded-md group ease-in duration-300 cursor-pointer" >
-          <a href="#" className="text-white group-hover:text-gray-100">
+          <a href="#" className="text-white group-hover:text-gray-100" onClick={()=> navigate('/')}>
             Ínicio
           </a>
         </li>
-        <li className="hover:bg-cyan-700 px-16 py-4 rounded-md group ease-in duration-300 cursor-pointer">
-          <a className="text-white group-hover:text-gray-100" href="#" onClick={()=> navigate('/movies')}>
+        <li className="hover:bg-cyan-700 px-16 py-4 rounded-md group ease-in duration-300 cursor-pointer" onClick={()=> navigate('/movies')}>
+          <a className="text-white group-hover:text-gray-100" href="#" >
             Filmes
           </a>
         </li>

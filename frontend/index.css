@@ -6,15 +6,6 @@
   display: grid;
 }
 
-@media (max-width: 640px) {
-  body {
-   display: grid; 
-   width: 100vw
-  }
-  .navbar {
-    width: 100vw;
-  }
-}
 
 html {
   height: 100%;
@@ -208,7 +199,7 @@ html {
 #stars:after {
   content: "";
   position: absolute;
-  top: 2000px;
+
   width: 1px;
   height: 1px;
   background: transparent;
@@ -452,7 +443,7 @@ html {
 #stars2:after {
   content: "";
   position: absolute;
-  top: 2000px;
+
   width: 2px;
   height: 2px;
   background: transparent;
@@ -545,7 +536,7 @@ html {
 #stars3:after {
   content: "";
   position: absolute;
-  top: 2000px;
+
   width: 3px;
   height: 3px;
   background: transparent;
@@ -582,7 +573,7 @@ html {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-2000px);
+    transform: translateY(-1000px);
   }
 }
 

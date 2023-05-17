@@ -40,14 +40,14 @@ const Curiosidades = () => {
 
   return (
     <section className="container flex justify-center items-center gap-10 group text-gray-100 text-justify p-32 rounded-lg bg-gradient-to-tl from-cyan-900 to-black m-12 mt-36 h-fit w-auto">
-      <div className="items-center">
+      <div className="">
         <h1 className="font-extrabold text-2xl mb-16 text-center">
           Curiosidades da franquia
         </h1>
         <ul className="list-inside">
           {items.map((item, index) => (
             <li
-              className="cursor-pointer w-72 px-10 py-3 rounded-lg mb-16 bg-gray-300 text-black hover:bg-cyan-500 shadow-lg shadow-cyan-500/50 ease-in duration-300"
+              className="cursor-pointer text-center w-72 px-10 py-3 rounded-lg mb-16 bg-gray-300 text-black hover:bg-cyan-500 shadow-lg shadow-cyan-500/50 ease-in duration-300"
               key={index}
               onClick={() => itemClick(item)}
             >
