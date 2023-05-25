@@ -1,10 +1,8 @@
-import Filme from "../components/Card/Card";
 import Navbar from "../components/Navbar/Navbar";
 import Sobre from "../components/Sobre/Sobre";
 import Curiosidades from "../components/Curiosidades/Curiosidades";
 import "../../index.css";
 import PropTypes from "prop-types";
-
 
 Home.propTypes = {
   movies: PropTypes.array,

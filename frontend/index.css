@@ -6,7 +6,6 @@
   display: grid;
 }
 
-
 html {
   height: 100%;
   background: radial-gradient(#1b2735 0%, #090a0f 100%);
@@ -199,7 +198,7 @@ html {
 #stars:after {
   content: "";
   position: absolute;
-
+  top: 2000px;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -443,7 +442,7 @@ html {
 #stars2:after {
   content: "";
   position: absolute;
-
+  top: 2000px;
   width: 2px;
   height: 2px;
   background: transparent;
@@ -536,7 +535,7 @@ html {
 #stars3:after {
   content: "";
   position: absolute;
-
+  top: 2000px;
   width: 3px;
   height: 3px;
   background: transparent;
@@ -573,20 +572,12 @@ html {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-1000px);
+    transform: translateY(-2000px);
   }
 }
 
 :root {
   font-family: "Orbitron", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
 a {

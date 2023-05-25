@@ -1,24 +1,51 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar/Navbar";
+import { useParams } from "react-router-dom";
+import PropTypes from "prop-types";
+import { useState, useEffect } from "react";
 
-function Create() {
+EditFilm.propTypes = {
+  id: PropTypes.string,
+};
+
+function EditFilm() {
   const navigate = useNavigate();
+
+  const { id } = useParams();
+
+  const [movie, setMovie] = useState({});
+
+  useEffect(() => {
+    fetch(`https://r2d2-3nrw.onrender.com/movies/${id}`).then((response) => {
+      if (response.status == 200) {
+        response.json().then((json) => setMovie(json));
+      } else {
+      }
+    });
+  }, [id]);
 
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-
+  console.log(movie.id)
   const onSubmit = async (data) => {
-    const response = await fetch("https://r2d2-3nrw.onrender.com/movies", {
-      body: JSON.stringify(data),
-      headers: { "Content-Type": "application/json" },
-      method: "POST",
-    });
+    console.log()
+    const response = await fetch(
+      `https://r2d2-3nrw.onrender.com/movies/${movie.id}`,
+      {
+        body: JSON.stringify(data),
+        headers: {
+          accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        method: "PUT",
+      }
+    );
+    console.log(response);
 
-    if (response.status == 201) {
+    if (response.status == 200) {
       navigate("/movies/");
     } else {
     }
@@ -26,13 +53,9 @@ function Create() {
 
   return (
     <section className="h-auto">
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-      <Navbar />
       <div className="flex flex-col justify-center items-center mt-20 my-12">
         <div className="w-[80%] flex flex-col justify-center items-center gap-12 text-slate-50 text-2xl">
-          <h2>Deseja adicionar um filme ao banco?</h2>
+          <h2>O que deseja editar no filme?</h2>
           <h3>Preencha o formulário:</h3>
         </div>
       </div>
@@ -47,6 +70,7 @@ function Create() {
           className={`rounded-lg p-2 w-full ${
             errors.name && "outline outline-2 outline-red-400"
           }`}
+          placeholder={`${movie.name}`}
           id="name"
           {...register("name", {
             required: "name is required",
@@ -86,6 +110,7 @@ function Create() {
           className={`rounded-lg p-2 w-full ${
             errors.img && "outline outline-2 outline-red-400"
           }`}
+          placeholder={`${movie.img}`}
           id="img"
           {...register("img", {})}
         />
@@ -102,6 +127,7 @@ function Create() {
             errors.year && "outline outline-2 outline-red-400"
           }`}
           id="year"
+          placeholder={`${movie.year}`}
           {...register("year", {
             valueAsNumber: true,
             min: {
@@ -128,6 +154,7 @@ function Create() {
             errors.year && "outline outline-2 outline-red-400"
           }`}
           id="sequential"
+          placeholder={`${movie.sequential}`}
           {...register("sequential", {
             min: {
               value: 1,
@@ -149,4 +176,4 @@ function Create() {
   );
 }
 
-export default Create;
+export default EditFilm;

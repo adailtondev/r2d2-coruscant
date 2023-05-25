@@ -19,18 +19,20 @@ const Filme = ({ movie }) => {
   }
 
   return (
-    <li
-      className={`flex flex-col w-64 h-[30rem] items-center text-slate-100 hover:text-slate-800 group justify-center gap-6 text-center rounded-md bg-gray-600 hover:${corFundo}`}
-    >
-      <h1 className="text-lg h-6 mb-1 font-bold ">{movie.name}</h1>
-      <img className="w-40 h-60" src={movie.img} alt="" />
-      <h3 className={` ${corSequencial} w-fit rounded-md p-1 `}>
-        {movie.trilogy}
-      </h3>
-      <span className=" ">sequencial: {movie.sequential}</span>
-      <span className="text-xl  ">{movie.year}</span>
-    </li>
+    <div className="grid my-10 mx-10">
+      <li
+        className={`flex flex-col items-center w-[24rem] z-10 text-slate-100 hover:text-slate-800 group justify-center gap-5 text-center rounded-md bg-gray-600 hover:${corFundo}`}
+      >
+        <h1 className="text-lg h-6 mt-2 font-bold ">{movie.name}</h1>
+        <img className="object-cover" src={movie.img} alt="" />
+        <h3 className={` ${corSequencial} w-fit rounded-md p-1 `}>
+          {movie.trilogy}
+        </h3>
+        <span className=" ">sequencial: {movie.sequential}</span>
+        <span className="text-xl  ">{movie.year}</span>
+      </li>
+    </div>
   );
 };
 
-export default Filme
+export default Filme;

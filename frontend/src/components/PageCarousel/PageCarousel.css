@@ -1,0 +1,12 @@
+.slider-container {
+    margin: 0 50px;
+    
+}
+
+.slider-container img {
+    max-height: 650px;
+    object-fit: cover;
+    object-position: center bottom;
+    border-radius: 18px;
+    margin-bottom: 50px;
+}

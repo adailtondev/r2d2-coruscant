@@ -1,8 +1,9 @@
-import { Routes, Route, Outlet, Link, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home";
 import Movie from './Pages/Movie'
 import Create from "./Pages/Create";
 import AllMovies from "./Pages/AllMovies";
+import EditFilm from "./Pages/EditFilm";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path="/movies/:id" element={<Movie />}/>
           <Route path='/create/' element={<Create />} />
           <Route path='/movies' element={<AllMovies/>}/>
+          <Route path='/editfilm/:id' element={<EditFilm/>}/>
         </Routes>
       </BrowserRouter>
     

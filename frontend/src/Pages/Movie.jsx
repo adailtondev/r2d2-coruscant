@@ -3,12 +3,15 @@ import { useParams } from "react-router-dom";
 import PropTypes from "prop-types";
 import Navbar from "../components/Navbar/Navbar";
 import { Icon } from "@iconify/react";
+import { useNavigate } from "react-router-dom";
 
 Movie.propTypes = {
   id: PropTypes.string,
 };
 
 function Movie() {
+  const navigate = useNavigate();
+
   const { id } = useParams();
 
   const [movie, setMovie] = useState({});
@@ -17,10 +20,24 @@ function Movie() {
     fetch(`https://r2d2-3nrw.onrender.com/movies/${id}`).then((response) => {
       if (response.status == 200) {
         response.json().then((json) => setMovie(json));
-      } else {
       }
     });
   }, [id]);
+
+  const deleteMovie = async (data) => {
+    const response = await fetch(
+      `https://r2d2-3nrw.onrender.com/movies/${data.id}`,
+      {
+        body: JSON.stringify(data),
+        headers: { "Content-Type": "application/json" },
+        method: "DELETE",
+      }
+    );
+
+    if (response.status == 200) {
+      navigate("/movies/");
+    }
+  };
 
   return (
     <section>
@@ -38,14 +55,25 @@ function Movie() {
             papel e presença na história.
           </p>
         </div>
-        <div className="col-span-1 ml-32 h-fit w-fit flex">
+        <div className="col-span-1 ml-32 h-[] w-[] flex">
           <div>
             <img src={movie.img} alt="" />
           </div>
-          <div className="flex flex-col items-center ml-4">
-            <p className="text-xs text-slate-50 w-28 text-center">Deseja excluir este filme da lista?</p>
-            <button className="bg-transparent hover:border-white">
+          <div className="flex items-start ml-4">
+            <button
+              className="bg-transparent border-none text-2xl"
+              onClick={() => deleteMovie(movie)}
+            >
               <Icon icon="material-symbols:delete" color="white" />
+            </button>
+            <button
+              className="bg-transparent border-none text-2xl "
+              onClick={() => navigate(`/editfilm/${movie.id}`)}
+            >
+              <Icon
+                icon="material-symbols:edit-document-outline"
+                color="white"
+              />
             </button>
           </div>
         </div>
