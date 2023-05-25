@@ -38,6 +38,7 @@ function Movie() {
       navigate("/movies/");
     }
   };
+  console.log(movie.description)
 
   return (
     <section>
@@ -49,10 +50,7 @@ function Movie() {
         <div className="col-span-1 text-center">
           <h1 className="text-slate-50 mb-24">{movie.name}</h1>
           <p className="text-slate-300">
-            Uma curiosidade interessante sobre o filme A Ameaça Fantasma é que o
-            personagem Darth Maul foi originalmente concebido como um vilão
-            menor, mas sua popularidade acabou levando a uma expansão de seu
-            papel e presença na história.
+            {movie.description}
           </p>
         </div>
         <div className="col-span-1 ml-32 h-[] w-[] flex">

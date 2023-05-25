@@ -236,8 +236,7 @@
           "description": {
             "type": "integer",
             "example": "this movie is about that: "
-          }
-          ,
+          },
           "trailer": {
             "type": "integer",
             "example": "urlTrailer"
