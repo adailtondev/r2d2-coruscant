@@ -107,16 +107,16 @@
     "colId": "e02290d2-6bb9-4dc2-b99b-6426480b4439",
     "containerId": "",
     "name": "update-movie",
-    "url": "localhost:4000/movies/clh94eojh0000v1cwlcuo5prr",
+    "url": "localhost:4000/movies/clhu3r2vc0000gs1g4guzrfsa",
     "method": "PUT",
     "sortNum": 30000,
     "created": "2023-05-04T13:33:10.099Z",
-    "modified": "2023-05-11T13:00:39.442Z",
+    "modified": "2023-05-25T14:52:58.095Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\": \"A Vingança dos Sith\",\n  \"year\": 2005,\n  \"sequential\": \"3\",\n  \"trilogy\": \"prequel\",\n  \"img\": \"https://upload.wikimedia.org/wikipedia/pt/5/58/Star_Wars_Epis%C3%B3dio_III_A_Vingan%C3%A7a_dos_Sith.jpg\"\n}",
+      "raw": "{\n  \"name\": \"A Ameaça Fantasma\",\n  \"year\": 1999,\n  \"sequential\": \"1\",\n  \"trilogy\": \"prequel\",\n  \"img\": \"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoF8AO40hcotx6FcFWww6cQ8UUv0eOCauVTBspUXRwQyMQqdhBTkRiln1Wtdi8_cEjbCmB_zvzlSiWT7tK3X2YmD8liidpEx2viFfI2PYhtfIDZ6Tr1z4riEZ3f33Rum2pL5tjMtCQ_XjRyYfAS9DixBhyzMZhXACUrjNYrvr_ytOF5B_sOc1oRKjN/s1200/1683140714-image008-(1).jpg\",\n  \"description\": \"Obi-Wan e seu mentor embarcam em uma perigosa aventura na tentativa de salvar o planeta das garras de Darth Sidious. Durante a viagem, eles conhecem um habilidoso menino e decidem treiná-lo para se tornar um Jedi. Mas o tempo irá revelar que as coisas nem sempre são o que aparentam ser.\",\n  \"trailer\": \"https://www.youtube.com/watch?v=JdtZWJyLiz0\"\n}",
       "form": []
     },
     "tests": []
