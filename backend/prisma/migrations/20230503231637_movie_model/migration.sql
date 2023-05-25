@@ -6,5 +6,7 @@ CREATE TABLE "Movie" (
     "sequential" TEXT NOT NULL,
     "trilogy" TEXT NOT NULL,
     "img" TEXT NOT NULL,
+    "description" TEXT NOT NULL,
+    "trailer" TEXT NOT NULL,
     CONSTRAINT "Movie_pkey" PRIMARY KEY ("id")
 );

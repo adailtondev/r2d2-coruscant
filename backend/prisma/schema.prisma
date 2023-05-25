@@ -17,4 +17,6 @@ model Movie {
   sequential String
   trilogy String
   img String?
+  description String?
+  trailer String?
 }

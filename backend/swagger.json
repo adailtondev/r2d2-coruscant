@@ -210,7 +210,7 @@
   "components": {
     "schemas": {
       "Movie": {
-        "required": ["name", "trilogy", "sequential", "year", "img"],
+        "required": ["name", "trilogy", "sequential", "year", "img", "description", "trailer"],
         "type": "object",
         "properties": {
           "name": {
@@ -232,6 +232,15 @@
           "img": {
             "type": "integer",
             "example": "urlImg"
+          },
+          "description": {
+            "type": "integer",
+            "example": "this movie is about that: "
+          }
+          ,
+          "trailer": {
+            "type": "integer",
+            "example": "urlTrailer"
           }
         },
         "xml": {
