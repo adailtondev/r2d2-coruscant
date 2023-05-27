@@ -37,8 +37,9 @@ function Movie() {
     if (response.status == 200) {
       navigate("/movies/");
     }
+    
   };
-  console.log(movie.description)
+  
 
   return (
     <section>
@@ -46,18 +47,18 @@ function Movie() {
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-      <section className="grid grid-cols-2 m-0 p-24 items-center">
-        <div className="col-span-1 text-center">
-          <h1 className="text-slate-50 mb-24">{movie.name}</h1>
+      <section className="grid grid-cols-3 m-0 p-24 items-center">
+        <div className="col-span-1 text-center w-[32rem]">
+          <h1 className="text-slate-50 mb-12">{movie.name}</h1>
           <p className="text-slate-300">
             {movie.description}
           </p>
         </div>
-        <div className="col-span-1 ml-32 h-[] w-[] flex">
-          <div>
-            <img src={movie.img} alt="" />
+        <div className="col-span-2 ml-32 h-[] w-[] flex">
+          <div className="z-10">
+            <img className="h-[18rem] w-[em] object-cover" src={movie.img} alt="" />
           </div>
-          <div className="flex items-start ml-4">
+          <div className="flex items-start ">
             <button
               className="bg-transparent border-none text-2xl"
               onClick={() => deleteMovie(movie)}
@@ -74,6 +75,12 @@ function Movie() {
               />
             </button>
           </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <iframe width="560" height="315" src={movie.trailer} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          
         </div>
       </section>
     </section>
