@@ -29,9 +29,9 @@ function EditFilm() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  console.log(movie.id)
+  console.log(movie.id);
   const onSubmit = async (data) => {
-    console.log()
+    console.log();
     const response = await fetch(
       `https://r2d2-3nrw.onrender.com/movies/${movie.id}`,
       {
@@ -102,22 +102,21 @@ function EditFilm() {
         {errors.trilogy && (
           <span className="text-red-400">{errors.trilogy.message}</span>
         )}
-
         <label htmlFor="img" className="text-slate-50">
           Poster Url
         </label>
         <input
-          className={`rounded-lg p-2 w-full ${
+          className={`rounded-lg p-2 select-text pointer-events-auto w-full ${
             errors.img && "outline outline-2 outline-red-400"
           }`}
-          placeholder={`${movie.img}`}
+          value={movie.img}
+          type="text"
           id="img"
           {...register("img", {})}
         />
         {errors.img && (
           <span className="text-red-400">{errors.img.message}</span>
         )}
-
         <label htmlFor="year" className="text-slate-50">
           Ano
         </label>
@@ -165,6 +164,22 @@ function EditFilm() {
         />
         {errors.sequential && (
           <span className="text-red-400">{errors.sequential.message}</span>
+        )}
+        <label htmlFor="name" className="text-slate-50">
+          Descrição
+        </label>
+        <input
+          className={`rounded-lg p-2 w-full ${
+            errors.description && "outline outline-2 outline-red-400"
+          }`}
+          placeholder={`${movie.description}`}
+          id="description"
+          {...register("description", {
+            required: "description is required",
+          })}
+        />
+        {errors.description && (
+          <span className="text-red-400">{errors.description.message}</span>
         )}
 
         <input
