@@ -58,7 +58,7 @@ function Movie() {
       <div id="stars3"></div>
       <section className="grid grid-cols-3 mt-14 mr-0 p-24 items-center">
         <div className="col-span-1 text-center w-[32rem]">
-          <h1 className="text-slate-50 mb-12">{movie.name}</h1>
+          <h1 className="text-slate-50 text-2xl font-bold mb-12">{movie.name}</h1>
           <p className="text-slate-300">{movie.description}</p>
         </div>
         <div className="col-span-2 ml-56 flex">
@@ -69,7 +69,7 @@ function Movie() {
               alt=""
             />
           </div>
-          <div className="flex items-start z-20">
+          <div className="ml-6 flex items-start gap-4 z-20">
             <button
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}

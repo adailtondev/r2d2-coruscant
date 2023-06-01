@@ -10,3 +10,9 @@
     border-radius: 18px;
     margin-bottom: 50px;
 }
+
+@media (max-width: 800px) {
+    .slider-container {
+        margin: 0 15px;
+    }
+}

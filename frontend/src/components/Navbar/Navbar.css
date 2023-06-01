@@ -4,6 +4,7 @@
     }
     .navbar ul{
         gap: 3rem;
+        margin-right: 0.9rem
     }
     .navbar ul li{
         padding: 0px
@@ -17,11 +18,13 @@
     }
     .navbar img {
         margin-left: 0.5rem;
+        width: 40px;
     }
     .navbar ul{
         margin-right: 0.5rem
     }
     .navbar ul li{
-        padding: 0px
+        padding: 4px;
+        font-size: 0.9rem;
     }
 }
