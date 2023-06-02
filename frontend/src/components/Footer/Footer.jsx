@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 
 const Footer = () => {
   return (
-    <footer className="mt-28 group text-slate-50 flex justify-around text-center">
+    <footer className="mt-28 group text-slate-50 flex justify-evenly text-center">
       <div className="flex items-center flex-col gap-5">
         <h5>Sites oficiais da franquia:</h5>
         <div className="flex gap-8 text-2xl">

@@ -1,3 +1,5 @@
+import './Card.css'
+
 const Filme = ({ movie }) => {
   let corFundo = "";
   let corSequencial = "";
@@ -21,7 +23,7 @@ const Filme = ({ movie }) => {
   return (
     <div className="grid my-10 mx-10">
       <li
-        className={`flex flex-col items-center w-[24rem] z-10 text-slate-100 hover:text-slate-800 group justify-center gap-5 text-center rounded-md bg-gray-600 hover:${corFundo}`}
+        className={`card-filme flex flex-col items-center w-[24rem] z-10 text-slate-100 hover:text-slate-800 group justify-center gap-5 text-center rounded-md bg-gray-600 hover:${corFundo}`}
       >
         <h1 className="text-lg h-6 mt-2 font-bold ">{movie.name}</h1>
         <img className="object-cover" src={movie.img} alt="" />
