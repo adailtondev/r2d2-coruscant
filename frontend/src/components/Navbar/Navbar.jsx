@@ -11,7 +11,10 @@ const Navbar = () => {
         className="w-[8%] h-[3%] mt-2 ml-16"
       />
       <ul className="flex gap-14 items-center justify-center mr-28">
-        <li className="hover:bg-cyan-700 px-16 py-4 rounded-md group ease-in duration-300 cursor-pointer">
+        <li
+          className="hover:bg-cyan-700 px-16 py-4 rounded-md group ease-in duration-300 cursor-pointer"
+          onClick={() => navigate("/movies")}
+        >
           <a
             className="text-white group-hover:text-gray-100"
             onClick={() => navigate("/")}

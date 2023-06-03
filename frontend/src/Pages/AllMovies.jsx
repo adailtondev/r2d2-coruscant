@@ -15,7 +15,6 @@ function AllMovies() {
   };
 
   useEffect(() => {
-    setLoading(true);
     fetch("https://r2d2-3nrw.onrender.com/movies").then((response) => {
       if (response.status == 200) {
         response.json().then((json) => setMovies(json));
@@ -23,6 +22,7 @@ function AllMovies() {
       } else {
       }
     });
+    setLoading(true);
   }, []);
 
   return (
