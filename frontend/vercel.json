@@ -1,8 +1,8 @@
 {
     "rewrites": [
       {
-        "source": "/movies",
-        "destination": "https://r2d2-coruscant.vercel.app/movies"
+        "source": "https://r2d2-coruscant.vercel.app/movies",
+        "destination": "/movies"
       }
     ]
   }
