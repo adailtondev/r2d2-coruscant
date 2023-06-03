@@ -16,7 +16,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-col items-center gap-2">
         <h4>Desenvolvido por Adailton Henrique</h4>
-        <p className="">
+        <div className="">
           Contatos:
           <div className="flex group text-2xl gap-8 mt-4 mb-4">
             <a href="https://github.com/adailtondev">
@@ -26,7 +26,7 @@ const Footer = () => {
               <Icon icon="la:linkedin" color="white" />
             </a>
           </div>
-        </p>
+        </div>
       </div>
     </footer>
   );
