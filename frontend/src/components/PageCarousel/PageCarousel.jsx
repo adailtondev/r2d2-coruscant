@@ -15,7 +15,7 @@ function PageCarousel() {
   }, []);
   return (
     <div className=" slider-container ">
-      <Carousel className="carousel-style " autoPlay={true} interval={3000} showStatus={false}>
+      <Carousel className="carousel-style " autoPlay={true} interval={3000} showStatus={false} showThumbs={false} infiniteLoop={true}>
         {movies.map((movie) => (
           <Link key={movie.id} to={movie.id}>
             <div>

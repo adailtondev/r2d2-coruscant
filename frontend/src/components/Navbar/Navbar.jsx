@@ -13,7 +13,7 @@ const Navbar = () => {
       <ul className="flex gap-14 items-center justify-center mr-28">
         <li
           className="hover:bg-cyan-700 px-16 py-4 rounded-md group ease-in duration-300 cursor-pointer"
-          onClick={() => navigate("/movies")}
+          onClick={() => navigate("/")}
         >
           <a
             className="text-white group-hover:text-gray-100"

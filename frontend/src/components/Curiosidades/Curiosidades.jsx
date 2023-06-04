@@ -39,7 +39,7 @@ const Curiosidades = () => {
   };
 
   return (
-    <section className="container flex justify-center items-center gap-10 group text-gray-100 text-justify p-32 rounded-lg bg-gradient-to-tl from-cyan-900 to-black m-12 mt-36 h-fit w-auto">
+    <section className="container flex justify-center items-center gap-10 group text-gray-100 text-justify p-32 rounded-lg bg-gradient-to-tl from-cyan-900 to-black m-12  h-fit w-auto">
       <div className="">
         <h1 className="font-extrabold text-2xl mb-16 text-center">
           Curiosidades da franquia
