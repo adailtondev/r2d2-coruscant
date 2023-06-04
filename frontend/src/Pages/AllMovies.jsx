@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import PageCard from "../components/PageCard/PageCard";
 import PageCarousel from "../components/PageCarousel/PageCarousel";
 import MoonLoader from "react-spinners/MoonLoader";
+import Footer from "../components/Footer/Footer";
 
 function AllMovies() {
   const [loading, setLoading] = useState(false);
@@ -60,7 +61,9 @@ function AllMovies() {
           <div className="">
             {optionsButton === "carrossel" ? <PageCarousel /> : <PageCard />}
           </div>
+          <Footer />
         </section>
+        
       )}
     </div>
   );
