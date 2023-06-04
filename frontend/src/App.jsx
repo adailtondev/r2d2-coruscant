@@ -4,6 +4,7 @@ import Movie from './components/Movie/Movie'
 import Create from "./Pages/Create";
 import AllMovies from "./Pages/AllMovies";
 import EditFilm from "./Pages/EditFilm";
+import Author from "./Pages/Author";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path='/create/' element={<Create />} />
           <Route path='/movies' element={<AllMovies/>}/>
           <Route path='/editfilm/:id' element={<EditFilm/>}/>
+          <Route path='/author' element={<Author/>}/>
         </Routes>
       </BrowserRouter>
     

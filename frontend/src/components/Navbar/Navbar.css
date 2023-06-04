@@ -14,7 +14,7 @@
 
 @media (max-width: 640px) {
     .navbar {
-        
+        width: 100%
     }
     .navbar img {
         margin-left: 0.5rem;

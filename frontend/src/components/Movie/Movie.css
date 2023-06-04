@@ -1,46 +1,74 @@
-.container-img {
-    
+.container {
+  position:relative;
+  display: flex;
+  margin-top: 3rem;
+  text-align: center;
+    align-items: center;
 }
 
-.container .container-img{ 
-    display: flex;
+.botao-back {
+  position: absolute; 
+  top: 10px;
+  left: 65px;
 }
 
+.container .container-texto {
+  margin-left: 10rem;
+  width: fit-content;
 
-@media (max-width: 1000px) {
-    .container {
-        margin-left: 40px;
-        grid-template-columns: 1fr;
-        padding: 0;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-right: 0;
-        width: 100%;
-    }
-    .container-texto {
-        width: 100vw;
-        align-item: center;
-    }
-    .container-img {
-        width: 80%; 
-        margin: 0
-    }
+}
+.container .container-texto p {
+
 }
 
-@media (max-width: 1280px) {
-    .container {
-        margin-left: 40px;
-        grid-template-columns: 1fr;
-        padding: 0;
-        align-items: center;
-        margin-right: 0;
-        width: 100%;
-    }
-    .container-texto {
-        width: 100vw;
-        align-item: center;
-    }
-    .container-img {
-        width: 80%; 
-    }
+.container .container-img {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 80px 80px 80px 80px;
+}
+
+.container .container-img img {
+}
+
+.container .container-img .container-icones {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1050px) {
+  .container .container-texto {
+    margin-left: 0;
+  }
+  .botao-back {
+    position: absolute; 
+    top: 10px;
+    left: 0px;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .container .container-img {
+    height: 20rem;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .container .container-img img {
+    height: 15rem;
+  }
+  .container .container-img .container-icones {
+    width: fit-content;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1040px) and (max-width: 1285px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .container-texto {
+    margin-left: 0;
+  }
 }

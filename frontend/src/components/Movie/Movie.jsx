@@ -52,27 +52,29 @@ function Movie() {
   };
 
   return (
-    <section className="w-[100vw]">
+    <section className="flex flex-col justify-center items-center">
       <Navbar />
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-      <section className="container grid grid-cols-3 mt-14 mr-0 p-24 items-center">
-        <div className="col-span-1 text-center w-[32rem]  container-texto">
+      <section className="container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <button
+          className="botao-back text-4xl"
+          onClick={() => navigate("/movies")}
+        >
+          <Icon icon="ep:back" color="white" />
+        </button>
+        <div className="container-texto">
           <h1 className="text-slate-50 text-2xl font-bold mb-12">
             {movie.name}
           </h1>
           <p className="text-slate-300">{movie.description}</p>
         </div>
-        <div className="col-span-2 ml-32 flex">
+        <div className="container-img">
           <div className="z-10">
-            <img
-              className="h-[18rem] w-[em] object-cover"
-              src={movie.img}
-              alt=""
-            />
+            <img className="object-cover" src={movie.img} alt="" />
           </div>
-          <div>
+          <div className="container-icones">
             <button
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
