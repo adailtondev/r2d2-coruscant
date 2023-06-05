@@ -26,7 +26,7 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 10px;
-  margin: 80px 80px 80px 80px;
+  margin: 20px 80px 40px 80px;
 }
 
 .container .container-img img {
