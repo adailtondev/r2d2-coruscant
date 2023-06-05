@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import './Footer.css'
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
       <div className="flex flex-col items-center gap-2">
         <h4>Desenvolvido por Adailton Henrique</h4>
         <div className="">
-          Contatos:
+          <p>Contatos:</p>
           <div className="flex group text-2xl gap-8 mt-4 mb-4">
             <a href="https://github.com/adailtondev">
               <Icon icon="arcticons:github" />

@@ -1,0 +1,6 @@
+@media (max-width: 600px) {
+    footer h5, h4, p{
+        font-size: 12px;
+    }
+    
+  }
