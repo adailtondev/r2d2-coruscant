@@ -15,14 +15,14 @@ const Sobre = () => {
           rica mitologia.
         </p>
         <img
-          className="w-[30rem] h-[22rem] rounded-md border-solid border-gray-50 sobre-img"
+          className="w-[30rem] h-[22rem] rounded-md border-solid border-gray-50 sobre-img object-cover"
           src="https://assets.b9.com.br/wp-content/uploads/2020/02/glb9.jpg"
           alt=""
         />
       </div>
       <div className="flex gap-5 items-center col-span-2 my-12">
         <img
-          className="w-[30rem] h-[22rem] rounded-md sobre-img"
+          className="w-[30rem] h-[22rem] rounded-md sobre-img object-cover"
           src="https://www.metroworldnews.com.br/resizer/SwqV2Okv_hUWODsHFslzY69w4ac=/800x0/filters:format(png):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/6NP7OFWQARGTVMQ4DPI4FVUPFU.png"
           alt=""
         />
@@ -45,14 +45,14 @@ const Sobre = () => {
           vidas.
         </p>
         <img
-          className="w-[30rem] h-[22rem] rounded-md sobre-img"
+          className="w-[30rem] h-[22rem] rounded-md sobre-img object-cover"
           src="https://media.vanityfair.com/photos/6297f3d1f0746bf707feb23a/4:3/w_2560%2Cc_limit/Florida%2520Cosplayers%2520-%2520Star%2520Wars%2520Celebration%25201.jpg"
           alt=""
         />
       </div>
       <div className="flex gap-5 items-center col-span-2 my-12">
         <img
-          className="w-[30rem] h-[22rem] rounded-md sobre-img"
+          className="w-[30rem] h-[22rem] rounded-md sobre-img object-cover"
           src="https://www.planocritico.com/wp-content/uploads/2020/11/Star-Wars-O-Despertar-da-Forca-Sem-Spoilers.jpg"
           alt=""
         />
@@ -76,14 +76,14 @@ const Sobre = () => {
           cativantes.
         </p>
         <img
-          className="w-[30rem] h-[22rem] rounded-md sobre-img"
+          className="w-[30rem] h-[22rem] rounded-md sobre-img object-cover"
           src="https://cdn.mos.cms.futurecdn.net/9acdFyuRut7qLHaJBXsXFe-1200-80.jpg"
           alt=""
         />
       </div>
       <div className="flex gap-5 items-center col-span-2 my-12">
         <img
-          className="w-[30rem] h-[22rem] rounded-md sobre-img"
+          className="w-[30rem] h-[22rem] rounded-md sobre-img object-cover"
           src="https://i.ytimg.com/vi/7Ct1GIzjkok/maxresdefault.jpg"
           alt=""
         />

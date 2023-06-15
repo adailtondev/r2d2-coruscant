@@ -61,7 +61,7 @@ const Curiosidades = () => {
           <h3 className="font-bold text-2xl">{selectedItem.name}</h3>
           <p className="leading-8">{selectedItem.description}</p>
           <p className="leading-8">{selectedItem.description1}</p>
-          <img className="w-44 h-44" src={selectedItem.imageUrl} alt="" />
+          <img className="w-96 h-64 object-cover" src={selectedItem.imageUrl} alt="" />
         </div>
       )}
     </section>
