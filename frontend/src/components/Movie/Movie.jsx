@@ -88,9 +88,9 @@ function Movie() {
             </div>
             <div className="container-img">
               <div className="z-10">
-                <img className="object-cover" src={movie.img} alt="" />
+                <img className="object-cover -z-1" src={movie.img} alt="" />
               </div>
-              <div className="container-icones">
+              <div className="container-icones z-10">
                 <button
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
@@ -110,6 +110,7 @@ function Movie() {
                   <Icon
                     icon="material-symbols:edit-document-outline"
                     color="white"
+                    className="z-50"
                   />
                 </button>
                 <Tooltip
