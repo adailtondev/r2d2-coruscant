@@ -1,0 +1,131 @@
+{
+    "_id": "e02290d2-6bb9-4dc2-b99b-6426480b4439",
+    "colName": "movie",
+    "created": "2023-04-24T23:33:14.298Z",
+    "sortNum": 10000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "48a9d62c-7324-4a0b-bdfc-f609415952c9",
+            "colId": "e02290d2-6bb9-4dc2-b99b-6426480b4439",
+            "containerId": "",
+            "name": "alphabetical",
+            "url": "localhost:4000/movies/alphabetical",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-04-25T00:40:40.940Z",
+            "modified": "2023-05-01T19:41:36.247Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a854bbfc-368c-4584-85e0-4fab07e6f9d4",
+            "colId": "e02290d2-6bb9-4dc2-b99b-6426480b4439",
+            "containerId": "",
+            "name": "sequential",
+            "url": "localhost:4000/movies/sequential",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-04-25T00:44:35.237Z",
+            "modified": "2023-05-01T19:41:30.619Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "77b3a62f-40d8-41d4-86fb-4de61318b448",
+            "colId": "e02290d2-6bb9-4dc2-b99b-6426480b4439",
+            "containerId": "",
+            "name": "movie-release",
+            "url": "localhost:4000/movies/movie-release",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-04-25T00:44:37.204Z",
+            "modified": "2023-05-01T19:41:31.894Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ffe40090-6754-4fdd-b489-624deda79e27",
+            "colId": "e02290d2-6bb9-4dc2-b99b-6426480b4439",
+            "containerId": "",
+            "name": "trilogy",
+            "url": "localhost:4000/movies/trilogy/classids",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-05-01T19:36:27.245Z",
+            "modified": "2023-05-05T15:01:26.103Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "30d7c48b-2eb9-4549-acc8-3f1972e8e670",
+            "colId": "e02290d2-6bb9-4dc2-b99b-6426480b4439",
+            "containerId": "",
+            "name": "add-movie",
+            "url": "localhost:4000/movies/",
+            "method": "POST",
+            "sortNum": 22500,
+            "created": "2023-05-01T23:21:01.954Z",
+            "modified": "2023-05-11T13:30:45.845Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"name\": \"A Ameaça Fantasma\",\r\n  \"year\": 1999,\r\n  \"sequential\": \"1\",\r\n  \"trilogy\": \"prequel\",\r\n  \"img\": \"https://upload.wikimedia.org/wikipedia/pt/thumb/3/30/Star_Wars_Epis%C3%B3dio_1_Amea%C3%A7a_Fantasma.jpg/240px-Star_Wars_Epis%C3%B3dio_1_Amea%C3%A7a_Fantasma.jpg\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c54dce38-9ec5-4736-a4f2-b25fec1644b8",
+            "colId": "e02290d2-6bb9-4dc2-b99b-6426480b4439",
+            "containerId": "",
+            "name": "delete-movie",
+            "url": "localhost:4000/movies/clhfdfg8y0000v1nk3x0e63cx",
+            "method": "DELETE",
+            "sortNum": 25000,
+            "created": "2023-05-01T23:36:02.343Z",
+            "modified": "2023-05-08T22:13:50.294Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6e5c2d3f-13ca-4dd3-b476-3a3d2f3f8287",
+            "colId": "e02290d2-6bb9-4dc2-b99b-6426480b4439",
+            "containerId": "",
+            "name": "all movies",
+            "url": "localhost:4000/movies/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-05-04T12:36:43.992Z",
+            "modified": "2023-05-04T12:37:09.789Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "476d02ec-e8f1-441b-bc1d-45e7e239f112",
+            "colId": "e02290d2-6bb9-4dc2-b99b-6426480b4439",
+            "containerId": "",
+            "name": "update-movie",
+            "url": "localhost:4000/movies/clhu3r2vc0000gs1g4guzrfsa",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-05-04T13:33:10.099Z",
+            "modified": "2023-05-25T14:52:58.095Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"A Ameaça Fantasma\",\n  \"year\": 1999,\n  \"sequential\": \"1\",\n  \"trilogy\": \"prequel\",\n  \"img\": \"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoF8AO40hcotx6FcFWww6cQ8UUv0eOCauVTBspUXRwQyMQqdhBTkRiln1Wtdi8_cEjbCmB_zvzlSiWT7tK3X2YmD8liidpEx2viFfI2PYhtfIDZ6Tr1z4riEZ3f33Rum2pL5tjMtCQ_XjRyYfAS9DixBhyzMZhXACUrjNYrvr_ytOF5B_sOc1oRKjN/s1200/1683140714-image008-(1).jpg\",\n  \"description\": \"Obi-Wan e seu mentor embarcam em uma perigosa aventura na tentativa de salvar o planeta das garras de Darth Sidious. Durante a viagem, eles conhecem um habilidoso menino e decidem treiná-lo para se tornar um Jedi. Mas o tempo irá revelar que as coisas nem sempre são o que aparentam ser.\",\n  \"trailer\": \"https://www.youtube.com/watch?v=JdtZWJyLiz0\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

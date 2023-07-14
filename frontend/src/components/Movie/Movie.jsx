@@ -96,7 +96,7 @@ function Movie() {
                   onMouseLeave={handleMouseLeave}
                   data-tooltip-content="Deletar filme do banco de dados"
                   className="bg-transparent border-none text-2xl my-anchor-element"
-                  onClick={() => deleteMovie(movie)}
+                  // onClick={() => deleteMovie(movie)}
                 >
                   <Icon icon="material-symbols:delete" color="white" />
                 </button>
@@ -105,7 +105,7 @@ function Movie() {
                   onMouseLeave={handleMouseLeave}
                   data-tooltip-content="Editar informações do filme"
                   className="bg-transparent border-none text-2xl my-anchor-element"
-                  onClick={() => navigate(`/editfilm/${movie.id}`)}
+                  // onClick={() => navigate(`/editfilm/${movie.id}`)}
                 >
                   <Icon
                     icon="material-symbols:edit-document-outline"
