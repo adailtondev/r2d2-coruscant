@@ -33,9 +33,16 @@ const Navbar = () => {
             Filmes
           </a>
         </li>
-        <li className="hover:bg-cyan-700 px-16 py-4 rounded-md group ease-in duration-300 cursor-pointer">
-          <a className="text-white group-hover:text-gray-100"
-          onClick={() => navigate("/author")}>Autor</a>
+        <li
+          className="hover:bg-cyan-700 px-16 py-4 rounded-md group ease-in duration-300 cursor-pointer"
+          onClick={() => navigate("/author")}
+        >
+          <a
+            className="text-white group-hover:text-gray-100"
+            onClick={() => navigate("/author")}
+          >
+            Autor
+          </a>
         </li>
       </ul>
     </header>
