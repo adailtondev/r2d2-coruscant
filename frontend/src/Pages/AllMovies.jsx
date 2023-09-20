@@ -66,8 +66,9 @@ function AllMovies() {
           <div className="relative create-movie">
             <div className="absolute top-0 right-12 text-slate-50 text-center ">
               <h4 className="mb-4 text-xs">Sentiu falta de algum filme?</h4>
-              <button className="text-sm cursor-pointer px-5 py-2 rounded-lg bg-gray-300 text-black hover:bg-cyan-500 shadow-lg shadow-cyan-500/50 ease-in duration-300" 
-              // onClick={() => navigate('/create')}
+              <button
+                className="text-sm cursor-pointer px-5 py-2 rounded-lg bg-gray-300 text-black hover:bg-cyan-500 shadow-lg shadow-cyan-500/50 ease-in duration-300"
+                onClick={() => navigate("/create")}
               >
                 Clique aqui para adicionar!
               </button>
