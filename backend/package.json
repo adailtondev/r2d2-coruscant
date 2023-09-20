@@ -30,6 +30,6 @@
     "swagger-ui-express": "^4.6.3"
   },
   "devDependencies": {
-    "prisma": "^4.13.0"
+    "prisma": "^5.3.1"
   }
 }
